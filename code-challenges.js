@@ -102,6 +102,7 @@ var stringWithVowels5 = "CodingIsGreat"
 
 const vowelOnly2 = (string) => {
   let arrayVowel = string.split("")
+  
   return arrayVowel.filter(value => value !== "a" && value !== "A" && value !== "e" && value !== "E" && value !== "i" && value !== "I" && value !== "o" && value !== "O" && value !== "u" && value !== "U").join("")
 }
 console.log(vowelOnly2(stringWithVowels3));
