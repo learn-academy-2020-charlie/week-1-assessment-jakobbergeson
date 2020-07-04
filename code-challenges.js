@@ -101,10 +101,13 @@ var stringWithVowels4 = 42
 var stringWithVowels5 = "CodingIsGreat"
 
 const vowelOnly2 = (string) => {
-  let arrayVowel = string.split("")
-  
-  return arrayVowel.filter(value => value !== "a" && value !== "A" && value !== "e" && value !== "E" && value !== "i" && value !== "I" && value !== "o" && value !== "O" && value !== "u" && value !== "U").join("")
+  if(typeof string === "string") {
+    let arrayVowel = string.split("")
+    return arrayVowel.filter(value => value !== "a" && value !== "A" && value !== "e" && value !== "E" && value !== "i" && value !== "I" && value !== "o" && value !== "O" && value !== "u" && value !== "U").join("")
+  } else {
+  return "This is not a string" }
 }
+
 console.log(vowelOnly2(stringWithVowels3));
 console.log(vowelOnly2(stringWithVowels4));
 console.log(vowelOnly2(stringWithVowels5));
